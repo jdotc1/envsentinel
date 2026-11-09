@@ -21,6 +21,9 @@
 
 - **check** — coerce and validate `.env`, optionally filling gaps from `process.env`
 - **scan** — find AWS / GitHub / OpenAI / Anthropic / Stripe / Slack / Google / Telegram / npm / PEM secrets (skips `.env.example` and lockfiles)
+
+The [secret-pattern reference](docs/SECRETS.md) lists the built-in providers,
+their match rules, and the synthetic positive/negative regression fixtures.
 - **example** — generate `.env.example` (postgres URLs get `postgres://…`, not `https://example.com`)
 - **types** — generate `env.d.ts` (`Env` plus `ProcessEnv` string fields)
 - **diff** — compare `.env` against `.env.example` (the classic “works on my machine” bug)
